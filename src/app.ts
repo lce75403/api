@@ -12,7 +12,7 @@ app.use(AppRoutes.routes);
 (async () => {
     await MongoDatabase.connect({
         mongoUrl: env.MONGO_URL,
-        dbName: "MonkeypoxAPI"
+        dbName: "api"
     });
 })();
 
